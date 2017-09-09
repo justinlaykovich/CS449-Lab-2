@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="justinlaykovich.umpirebuddy10.UmpireBuddy">
+
+    <TextView
+        android:id="@+id/strike_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:text="@string/strike_label"
+        app:layout_constraintBaseline_toBaselineOf="@+id/strike_count"
+        app:layout_constraintLeft_toLeftOf="@+id/strike_button"
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintLeft_creator="1" />
+
+    <TextView
+        android:id="@+id/ball_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:text="@string/ball_label"
+        app:layout_constraintBaseline_toBaselineOf="@+id/ball_count"
+        app:layout_constraintLeft_toLeftOf="@+id/strike_label"
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintLeft_creator="1" />
+
+    <TextView
+        android:id="@+id/strike_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="115dp"
+        android:text="@string/strike_count_default"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="@+id/ball_count"
+        app:layout_constraintRight_toRightOf="@+id/ball_count"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <TextView
+        android:id="@+id/ball_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="11dp"
+        android:text="@string/ball_count_default"
+        app:layout_constraintLeft_toRightOf="@+id/ball_label"
+        app:layout_constraintTop_toBottomOf="@+id/strike_count"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <Button
+        android:id="@+id/strike_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:onClick="strike_button_click"
+        android:text="@string/strike_button_label"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ball_label"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <Button
+        android:id="@+id/ball_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:onClick="ball_button_click"
+        android:text="@string/ball_button_label"
+        app:layout_constraintLeft_toLeftOf="@+id/strike_button"
+        app:layout_constraintTop_toBottomOf="@+id/strike_button"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <TextView
+        android:id="@+id/total_outs_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintLeft_toRightOf="@+id/total_outs_label"
+        app:layout_constraintTop_toBottomOf="@+id/ball_button"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <TextView
+        android:id="@+id/total_outs_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total_outs"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginEnd="38dp"
+        app:layout_constraintRight_toRightOf="@+id/ball_button"
+        app:layout_constraintBaseline_toBaselineOf="@+id/total_outs_count"
+        tools:layout_constraintBaseline_creator="1"
+        android:layout_marginRight="38dp" />
+
+</android.support.constraint.ConstraintLayout>

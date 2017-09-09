@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Umpire Buddy 1.0</string>
+    <string name="strike_label">Strike:</string>
+    <string name="ball_label">Ball:</string>
+    <string name="ball_count_default">0</string>
+    <string name="strike_button_label">Strike</string>
+    <string name="ball_button_label">Ball</string>
+    <string name="strike_count_default">0</string>
+    <string name="about">Umpire Buddy by Justin Laykovich</string>
+    <string name="total_outs">Total outs:</string>
+    <string name="total_outs_default">0</string>
+    <string name="total_outs_count">0</string>
+</resources>
